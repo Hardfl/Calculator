@@ -13,7 +13,7 @@ entry = tk.Entry(root, width=20, font=("Arial", 24), bd=5, relief="ridge",
 entry.grid(row=0, column=0, columnspan=5, padx=10, pady=10)
 
 
-# Function to handle button click
+# Function that does the button click
 def click(symbol):
     current = entry.get()
     entry.delete(0, tk.END)
@@ -67,7 +67,7 @@ def modulus():
     click("%")
 
 
-# Button layout (with parentheses added)
+# Button layout and added parenthesis for operations like PEMDAS :3
 buttons = [
     ("7", 1, 0), ("8", 1, 1), ("9", 1, 2), ("/", 1, 3), ("√", 1, 4),
     ("4", 2, 0), ("5", 2, 1), ("6", 2, 2), ("*", 2, 3), ("x²", 2, 4),
@@ -76,7 +76,7 @@ buttons = [
     ("(", 5, 0), (")", 5, 1)
 ]
 
-# Create buttons with deeper gold style
+# Create buttons with more of cool gold look 
 for (text, row, col) in buttons:
     if text == "=":
         b = tk.Button(root, text=text, width=5, height=2, font=("Arial", 18),
@@ -110,6 +110,6 @@ clear_btn = tk.Button(root, text="C", width=15, height=2, font=("Arial", 18),
                       command=clear)
 clear_btn.grid(row=5, column=2, columnspan=3, padx=5, pady=5)
 
-# Run the app
+# Runs the app
 root.mainloop()
 
