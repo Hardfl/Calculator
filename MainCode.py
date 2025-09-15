@@ -40,11 +40,11 @@ while True:
     print("7. square")
     print("Q. quit")
 
-    choice = input("Enter choice (1/2/3/4/5/6/7 or Q): ").lower()
+    choice = input("Enter choice (1/2/3/4/5/6/7 or Q): ").lower() #not case-sensitive
 
-    # Exit condition
+    # Exits the condition
     if choice == "q":
-        print("Goodbye! 👋")
+        print("Bai-Bai! 👋")
         break
 
     # Handle single-number operations
@@ -56,7 +56,7 @@ while True:
         num = float(input("Enter number: "))
         print(num, "² =", square(num))
 
-    # Handle two-number operations
+    # Handles operations with 2 numbers
     elif choice in ["1", "2", "3", "4", "5"]:
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
@@ -74,4 +74,4 @@ while True:
 
     # Invalid input
     else:
-        print("❌ Invalid choice. Please try again.")
+        print("Cannot choose that. Please try again.")
