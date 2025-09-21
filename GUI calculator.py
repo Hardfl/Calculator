@@ -1,13 +1,13 @@
 import tkinter as tk
 import math
 
-# Create main window
+# Makes le window :0
 root = tk.Tk()
 root.title("Golden Calculator")
 root.geometry("350x500")
 root.configure(bg="#B8860B")  # Dark goldenrod background
 
-# Entry widget for input/output
+# Entry for input n output
 entry = tk.Entry(root, width=20, font=("Arial", 24), bd=5, relief="ridge",
                  justify="right", bg="#FFF8DC", fg="black")  # Cornsilk input box
 entry.grid(row=0, column=0, columnspan=5, padx=10, pady=10)
@@ -110,6 +110,6 @@ clear_btn = tk.Button(root, text="C", width=15, height=2, font=("Arial", 18),
                       command=clear)
 clear_btn.grid(row=5, column=2, columnspan=3, padx=5, pady=5)
 
-# Runs the app
+# Runs the app yay!
 root.mainloop()
 
